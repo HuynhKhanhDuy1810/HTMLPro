@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+    </style>
+</head>
+<body>
+    <form action="#" method="post" name="frmDangNhap"></form>
+    <table class="txtTable" border="1px">
+        <thead></thead>
+        <tbody>
+            <tr>
+                <td width="35%"><label>Tên đăng nhập:</label></td>
+                <td>
+                <input type="text" name="txtText" id="txtText">
+                <label id="lbBatBuoc">*</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Mật khẩu:</label></td>
+                <td>
+                    <input type="password" name="txtpassword" id="txtpassword">
+                    <label id="lbBatBuoc">*</label>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="reset" name="rsDangNhap" id="rsDangNhap" value="nhập lại"></td>
+                <td>
+                    <input type="button"  name="txtbutton" id="txtbutton" value="Đăng Nhập">
+                <input type="checkbox" name="txtcheckbox" id="txtcheckbox" value="1">Ghi nhớ đăng nhập
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><a href="#">Quên mật khẩu ?</a</td>
+            </tr>
+        </tbody>
+    </table>
+    <p> Giới tính</p>
+    <input type="radio" name="rdGioiTinh" id="rdGioiTinh" value="0">Nam
+    <input type="radio" name="rdGioiTinh" id="rdGioiTinh" value="1">Nữ
+<p>Quê Quán</p>
+<select name="slQuequan" id="slQuequan" required="required" multiple="multiple" >
+    <!-- multiple="multiple" đa lựa chọn -->
+    <option value="0">Vĩnh Long</option>
+    <option value="1">Cần Thơ</option>
+    <option value="2">Sóc Trăng</option>
+    <option value="3" selected="selected">Bạc Liêu</option>
+    <!-- selected="selected": ưu tiên lên đầu -->
+</select> <br>
+<input type="file" name="filename" id="filename">
+<!-- chọn file -->
+<input type="text" name="txtTen" autofocus="đ" id="txtTen" placeholder="nhập tên" required="required">
+<!--  placeholder="nhập tên" chữ ẩn trong text
+     required="required" bắt buộc nhập-->
+</body>
+</html>
